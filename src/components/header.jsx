@@ -9,9 +9,9 @@ function Header() {
   return (
     <header>
       <nav>
-        <a href='#'>Lorem Ipsum</a>
-        <a href='#'>Lorem Ipsum</a>
-        <a href='#'>Lorem Ipsum</a>
+        <a href='#'>Lorem ipsum</a>
+        <a href='#'>Lorem ipsum</a>
+        <a href='#'>Lorem ipsum</a>
       </nav>
 
       <span onClick={toggleDropdown()}>&#9776;</span>
