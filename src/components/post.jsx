@@ -10,7 +10,7 @@ function Post() {
 
         </div>
         <div className='post-description'>
-          <span>Lorem ipsum dolor sit amet, consectetur</span>
+          <h4>Lorem ipsum dolor sit amet, consectetur</h4>
           <span>Lorem ipsum</span>
           <span>Lorem ipsum dolor sit</span>
         </div>
@@ -18,16 +18,19 @@ function Post() {
 
       {/* COMMENT SECTION */}
       <div className='comment'>
-        <input
-          type="text"
-          placeholder='Placeholder...' />
-        <button
-          type='button'>submit</button>
+        <div className='comment-input'>
+          <input
+            type="text"
+            value='Placeholder...'
+            placeholder='Placeholder...' />
+          <button
+            type='button'>SUBMIT</button>
+        </div>
         <div className='comment-space'>
 
         </div>
       </div>
-      
+
     </div>
   )
 }

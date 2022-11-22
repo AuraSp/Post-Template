@@ -1,0 +1,6 @@
+.container {
+    background-color: #dadada;
+    padding: 2em;
+    display: flex;
+    flex-flow: row nowrap;
+}

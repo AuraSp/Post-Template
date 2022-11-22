@@ -6,8 +6,8 @@ function Main({ Post }) {
 
       {/* Post Section */}
       <Post />
-      <Post />
-      <Post />
+      {/* <Post />
+      <Post /> */}
 
     </main>
   )
