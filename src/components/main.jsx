@@ -1,8 +1,15 @@
-import React from 'react'
+import React from 'react';
 
-function Main() {
+function Main({ Post }) {
   return (
-    <div>main</div>
+    <main className='container'>
+
+      {/* Post Section */}
+      <Post />
+      <Post />
+      <Post />
+
+    </main>
   )
 }
 
