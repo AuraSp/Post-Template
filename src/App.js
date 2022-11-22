@@ -5,6 +5,11 @@ import Header from './components/header';
 import Main from './components/main';
 import Post from './components/post';
 
+// Stylesheet imports
+import './styles/header.css';
+import './styles/main.css';
+import './styles/post.css';
+
 function App() {
   return (
     <Fragment>
