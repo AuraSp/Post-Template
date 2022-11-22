@@ -10,7 +10,7 @@ function Post() {
 
         </div>
         <div className='post-description'>
-          <h4>Lorem ipsum dolor sit amet, consectetur</h4>
+          <h5>Lorem ipsum dolor sit amet, consectetur</h5>
           <span>Lorem ipsum</span>
           <span>Lorem ipsum dolor sit</span>
         </div>

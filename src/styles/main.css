@@ -1,5 +1,5 @@
 .container {
-    background-color: #dadada;
+    background-color: var(--main-background);
     padding: 2em;
     display: flex;
     flex-flow: row nowrap;

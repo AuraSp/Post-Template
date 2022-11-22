@@ -1,0 +1,81 @@
+.post-card {
+    background-color: var(--post-card-background);
+    border-radius: 8px;
+    width: 22em;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.post {
+    padding: 1.2em;
+    display: flex;
+    flex-flow: column wrap;
+}
+
+.post-space {
+    height: 16em;
+    background-color: var(--post-background);
+    border-radius: 8px;
+}
+
+.post-description {
+    padding: 1em 0 0 0;
+    color: var(--text-color);
+}
+
+.post-description>* {
+    display: block;
+}
+
+.post-description span:nth-child(2) {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.post-description span:last-child {
+    margin: 0.5em 0 0 0;
+    font-size: 9px;
+}
+
+.comment {
+    padding: 0.5em 0.5em 0 0.8em;
+    background-color: var(--post-comment-background);
+    border-bottom-left-radius: 8px;
+    border-bottom-right-radius: 8px;
+}
+
+.comment-input {
+    position: relative;
+}
+
+.comment-input input {
+    color: var(--text-color);
+    width: 100%;
+    font-weight: bold;
+    text-indent: 1em;
+    background-color: var(--post-input-background);
+    outline: none;
+    border: 0;
+    padding: 0.8em 0;
+    font-size: 10px;
+    border-radius: 22px;
+}
+
+.comment-input button {
+    color: var(--text-color);
+    position: absolute;
+    font-weight: 600;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border: none;
+    padding: 0.8em;
+    font-size: 10px;
+    background-color: var(--post-background);
+    border-top-right-radius: 22px;
+    border-bottom-right-radius: 22px;
+}
+
+.comment-space {
+    height: 10em;
+}
