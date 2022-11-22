@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { Fragment } from 'react';
+
+//Component imports
+import Header from './components/header';
+import Main from './components/main';
+import Post from './components/post';
 
 function App() {
   return (
-    <div>App</div>
+    <Fragment>
+
+      {/* Header Section */}
+      <Header />
+
+      {/* Main Section */}
+      <Main Post={Post} />
+
+    </Fragment>
   )
 }
 
