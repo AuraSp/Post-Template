@@ -9,6 +9,7 @@ import Post from './components/post';
 import './styles/header.css';
 import './styles/main.css';
 import './styles/post.css';
+import './styles/@media.css';
 
 function App() {
   return (

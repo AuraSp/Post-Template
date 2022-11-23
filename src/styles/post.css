@@ -38,7 +38,6 @@
 }
 
 .comment {
-    padding: 0.5em 0.5em 0 0.8em;
     background-color: var(--post-comment-background);
     border-bottom-left-radius: 8px;
     border-bottom-right-radius: 8px;
@@ -46,6 +45,7 @@
 
 .comment-input {
     position: relative;
+    padding: 0.6em 0.6em 0 0.8em;
 }
 
 .comment-input input {
@@ -71,11 +71,17 @@
     border: none;
     padding: 0.8em;
     font-size: 10px;
+    transform: translateY(10px);
     background-color: var(--post-background);
     border-top-right-radius: 22px;
     border-bottom-right-radius: 22px;
 }
 
 .comment-space {
+    height: 30em;
+}
+
+.scroll {
+    overflow-y: scroll;
     height: 10em;
 }

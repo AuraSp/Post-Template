@@ -1,0 +1,57 @@
+@media screen and (min-width:641px) and (max-width: 1200px) {
+
+    .container {
+        flex-flow: column wrap;
+    }
+
+    .post-card {
+        flex-flow: row nowrap;
+        width: fit-content;
+    }
+
+    .post {
+        flex-direction: column-reverse;
+        width: 20em;
+        padding: 0.6em 1.2em 1.2em 1.2em;
+    }
+
+    .post-description {
+        padding: 0 0 0 0.8em;
+    }
+
+    .post-description span:last-child {
+        margin: 0.6em 0 0.6em 0;
+    }
+
+    .comment {
+        width: 22em;
+        border-bottom-left-radius: 0;
+        border-top-right-radius: 8px;
+    }
+
+
+    .comment-space {
+        /* overflow-y:auto; */
+    }
+}
+
+
+@media screen and (max-width: 640px) {
+    .container {
+        flex-flow: column nowrap;
+    }
+
+    header {
+        text-align: right;
+        padding: 0.6em 1em;
+    }
+
+    nav:first-of-type {
+        display: none;
+    }
+
+    header span {
+        display: inline;
+        font-size: 22px;
+    }
+}

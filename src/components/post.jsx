@@ -26,8 +26,9 @@ function Post() {
           <button
             type='button'>SUBMIT</button>
         </div>
-        <div className='comment-space'>
-
+        <div className='scroll'>
+          <div className='comment-space'>
+          </div>
         </div>
       </div>
 
