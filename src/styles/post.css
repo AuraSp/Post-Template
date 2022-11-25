@@ -81,7 +81,7 @@
     width: 15%;
     position: absolute;
 
-    padding: var(--medium-unit) calc(var(--small-unit) + 0.1em) var(--medium-unit) calc(var(--small-unit) + 0.1em);
+    padding: calc(var(--small-unit) + 0.5em) calc(var(--small-unit) + 0.1em) calc(var(--small-unit) + 0.4em) calc(var(--small-unit) + 0.1em);
 
     font-weight: 600;
     font-size: 10px;

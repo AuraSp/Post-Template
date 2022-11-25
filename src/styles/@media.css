@@ -60,7 +60,6 @@
 
     header {
         text-align: right;
-        padding: var(--small-unit) var(--medium-unit);
     }
 
     nav:first-of-type {
@@ -70,6 +69,7 @@
     header span {
         display: inline;
         font-size: 22px;
+        padding: var(--small-unit) var(--medium-unit);
     }
 
     .container {
