@@ -1,16 +1,17 @@
 header {
-    color: var(--text-color);
-    background-color: var(--header-background);
-    height: auto;
-    padding: 1em;
+    padding: var(--medium-unit);
     text-align: center;
+
+    color: var(--text-color);
+    background-color: var(--header-bg);
 }
 
 nav:first-of-type a {
-    margin: 0 1em;
+    margin: 0 var(--medium-unit);
+
+    color: var(--text-color);
     text-decoration: none;
     font-weight: 900;
-    color: var(--text-color);
 }
 
 header span {

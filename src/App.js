@@ -14,13 +14,11 @@ import './styles/@media.css';
 function App() {
   return (
     <Fragment>
-
       {/* Header Section */}
       <Header />
 
       {/* Main Section */}
       <Main Post={Post} />
-
     </Fragment>
   )
 }
