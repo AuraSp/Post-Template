@@ -1,7 +1,7 @@
 .post-card {
     display: flex;
     flex-flow: column nowrap;
-    flex-basis: 20%;
+    flex-basis: 25%;
 
     margin: 0 var(--medium-unit) 0 var(--medium-unit);
 
@@ -41,6 +41,7 @@
 
 .post-description span:last-child {
     margin: var(--small-unit) 0 0 0;
+    
     font-size: 10px;
 }
 
@@ -135,8 +136,9 @@
 
 hr {
     clear: both;
-    background-color: var(--post-card-bg);
+
     border: 1px solid var(--post-bg);
+    background-color: var(--post-card-bg);
 }
 
 .overflow {

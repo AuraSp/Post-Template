@@ -7,6 +7,9 @@
 
     .post-card {
         flex-flow: row;
+        flex-basis: 0;
+        width: 90%;
+
         margin: var(--medium-unit) 0;
     }
 
@@ -31,7 +34,7 @@
 
     .comment {
         flex-basis: 50%;
-        height: 26em;
+        height: 26.5em;
 
         padding: var(--small-unit) 0;
 
@@ -58,7 +61,7 @@
 
 @media screen and (max-width: 640px) {
 
-    header {
+    .header {
         text-align: right;
     }
 
@@ -66,10 +69,12 @@
         display: none;
     }
 
-    header span {
+    .header span {
         display: inline;
-        font-size: 22px;
+
         padding: var(--small-unit) var(--medium-unit);
+
+        font-size: 22px;
     }
 
     .container {
@@ -82,15 +87,7 @@
         flex-flow: column nowrap;
         flex-basis: 80%;
 
-        margin-bottom: var(--medium-unit);
-    }
-
-    .post {
-        flex-basis: 60%;
-    }
-
-    .comment {
-        flex-basis: 40%;
+        margin-bottom: var(--big-unit);
     }
 
     .overflow::-webkit-scrollbar,

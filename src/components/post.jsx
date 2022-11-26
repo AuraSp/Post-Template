@@ -1,6 +1,44 @@
-import React from 'react'
+import React, { useState } from 'react';
 
-function Post() {
+function Post({ CommentCard }) {
+
+  // ARRAY FOR COMMENTS BOX
+  let commentArr = [
+    {
+      user: 'Lorem ipsum',
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+    },
+    {
+      user: 'Lorem ipsum',
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+    },
+    {
+      user: 'Lorem ipsum',
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+    },
+    {
+      user: 'Lorem ipsum',
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+    },
+    {
+      user: 'Lorem ipsum',
+      comment: 'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.'
+    },
+  ]
+
+  let [userComment, setUserComment] = useState('');
+  
+  // FUNCTION FOR LEAVING THE COMMENT (NO LIVE ADDING)
+  function leaveComment(e) {
+    e.preventDefault();
+
+    let tempObj = {
+      user: 'Lorem ipsum',
+      comment: userComment
+    };
+    commentArr.push(tempObj);
+  }
+
   return (
     <div className='post-card'>
 
@@ -23,141 +61,23 @@ function Post() {
           {/* input section */}
           <div className='comment-input'>
             <input
+              onChange={(e) => { setUserComment(e.target.value) }}
               type="text"
+              maxLength={30}
+              minLength={1}
               placeholder='Placeholder...' />
             <button
-              type='button'>SUBMIT</button>
+              type='button' onClick={(e) => { leaveComment(e) }}>SUBMIT</button>
           </div>
 
           {/* comments text section */}
           <div className='comment-space'>
 
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
-            <div className='icon-box'>
-              <div className='img'></div>
-            </div>
-            <div className='comment-text'>
-              <h4>Lorem ipsum</h4>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud.</p>
-            </div>
-            <hr />
-
+            {commentArr.map((filteredData) => (
+              <CommentCard
+                data={filteredData} />
+            ))
+            }
           </div>
         </div>
       </div>
