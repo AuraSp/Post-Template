@@ -37,7 +37,7 @@ function Post({ CommentCard }) {
       comment: userComment
     };
     commentArr.push(tempObj);
-  }
+  };
 
   return (
     <div className='post-card'>
@@ -79,6 +79,7 @@ function Post({ CommentCard }) {
             ))
             }
           </div>
+
         </div>
       </div>
 

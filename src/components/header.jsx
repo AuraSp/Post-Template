@@ -8,17 +8,16 @@ function Header() {
 
   // TOGGLE DROPDOWN CLASSES
   function toggleDropdown() {
-    setToggle(!toggle)
+    setToggle(!toggle);
 
 
     if (!toggle) {
       header.current.classList.add('dropdown-header');
       icon.current.innerHTML = 'X';
-
     } else {
       header.current.classList.remove('dropdown-header');
       icon.current.innerHTML = '&#9776;';
-    }
+    };
 
   }
 

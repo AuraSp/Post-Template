@@ -1,6 +1,7 @@
 import React from 'react';
 
 function Main({ Post, CommentCard }) {
+  
   return (
     <main className='container'>
 
