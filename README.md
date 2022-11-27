@@ -80,3 +80,14 @@ npm i /or/ npm install
  npm start
 ```
 <p align="right">(<a href="#readme-top">Back to top</a>)</p>
+
+ [NPM]: https://img.shields.io/badge/Npm-fff?style=for-the-badge&logo=npm
+ [NPM-url]: https://www.npmjs.com/
+ [GIT]: https://img.shields.io/badge/Git-%23F05033?style=for-the-badge&logo=git&logoColor=white
+ [GIT-url]: https://git-scm.com/
+ [React.js]: https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB
+ [React-url]: https://reactjs.org/
+ [VS CODE]: https://img.shields.io/badge/Visual%20Studio%20Code-007ACC?&style=for-the-badge&logo=visual-studio-code&logoColor=61DAFB
+ [VSCode-url]: https://code.visualstudio.com/
+ [Node.js]: https://img.shields.io/badge/Node.js-6DA55F?&style=for-the-badge&logo=node.js&logoColor=#689f63
+ [Node-url]: https://nodejs.org/en/
