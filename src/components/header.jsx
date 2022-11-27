@@ -4,6 +4,7 @@ function Header() {
 
   const [toggle, setToggle] = useState(false);
   const header = useRef(null);
+  const icon = useRef(null);
 
   // TOGGLE DROPDOWN CLASSES
   function toggleDropdown() {
@@ -11,9 +12,12 @@ function Header() {
 
 
     if (!toggle) {
-      header.current.classList.add('dropdown-header')
+      header.current.classList.add('dropdown-header');
+      icon.current.innerHTML = 'X';
+
     } else {
-      header.current.classList.remove('dropdown-header')
+      header.current.classList.remove('dropdown-header');
+      icon.current.innerHTML = '&#9776;';
     }
 
   }
@@ -29,7 +33,7 @@ function Header() {
       </nav>
 
       {/* S-D NAVBAR */}
-      <span onClick={toggleDropdown}>&#9776;&#9747;</span>
+      <span onClick={toggleDropdown} ref={icon}>&#9776;</span>
       <nav id='nav' className={!toggle ? 'dropdown-close' : 'dropdown-open'}>
         <a href='/'>Lorem ipsum</a>
         <a href='/'>Lorem ipsum</a>
