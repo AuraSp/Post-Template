@@ -26,11 +26,7 @@
             -ms-flex-direction: column-reverse;
         flex-direction: column-reverse;
 
-        padding: 0 var(--big-unit) var(--big-unit) var(--big-unit);
-    }
-
-    .post-space {
-        height: 18em;
+        padding: 0 calc(var(--medium-unit) + 0.5em) calc(var(--medium-unit) + 0.5em) calc(var(--medium-unit) + 0.5em);
     }
 
     .post-description {

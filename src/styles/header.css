@@ -47,19 +47,20 @@ nav:first-of-type a {
 
     z-index: 1;
 
-    background-color: var(--dropdown-nav-bg);
+    background-color: var(--post-card-bg);
 }
 
 .dropdown-open a {
     display: block;
 
-    padding: 1em;
+    padding:calc(var(--small-unit) + 0.3em);
 
     text-decoration: none;
     font-size: 40px;
+    font-weight: 800;
 
     color: var(--text-color);
-    border-bottom: 2px solid var(--post-card-bg);
+    border-bottom: 5px solid #818181;
 }
 
 .dropdown-header {
